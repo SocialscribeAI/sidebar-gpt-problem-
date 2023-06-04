@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat with Social Scribe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+</head>
+<body>
+    <div id="main-content">
+        <h1>Chat with Social Scribe</h1>
+
+        <div id="chatbox">
+            <div id="chat-history">
+                <!-- Chat history will be displayed here by script.js -->
+            </div>
+
+            <form id="chat-form" method="POST">
+                <textarea id="message" placeholder="Type your message..." required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="sidebar">
+        <h2>Settings / Filter</h2>
+        <form id="filter-form" action="javascript:void(0);">
+            <label for="post_topic">Post Topic:</label>
+            <input type="text" id="post_topic" name="post_topic">
+
+            <label for="social_platform">Social Platform:</label>
+            <input type="text" id="social_platform" name="social_platform">
+
+            <label for="example_post_1">Example Post 1:</label>
+            <textarea id="example_post_1" name="example_post_1"></textarea>
+
+            <label for="example_post_2">Example Post 2:</label>
+            <textarea id="example_post_2" name="example_post_2"></textarea>
+
+            <label for="example_post_3">Example Post 3:</label>
+            <textarea id="example_post_3" name="example_post_3"></textarea>
+
+            <button type="submit">Search</button>
+            <button type="reset">Refresh Options</button>
+        </form>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
